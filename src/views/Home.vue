@@ -1,12 +1,12 @@
 <template>
-  <div class="container-fluid row ml-3">
+  <div class="ml-3 container-fluid row">
     <div class="col-12">
-      <h1 class="display-4 text-white">Welcome to WWE</h1>
+      <h1 class="text-white display-4">Welcome to WWE</h1>
     </div>
   </div>
   <div class="container-fluid mb-9">
     <div class="row">
-      <CardVideo v-for="video in videos" :key="video.id" :videoInfo="video" class="col-md-4 mb-4" />
+      <CardVideo v-for="video in videos" :key="video.id" :videoInfo="video" class="mb-4 col-md-4" />
     </div>
   </div>
 
@@ -14,7 +14,7 @@
 
 <script>
 import { defineComponent } from "vue"
-import CardVideo from "@/components/CardVideo.vue";
+import CardVideo from "../components/CardVideo.vue";
 
 export default defineComponent({
   name: 'Home',

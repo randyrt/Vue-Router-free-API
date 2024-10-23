@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-col items-center px-8">
     <div>
-      <iframe class="rounded-lg" :src="`https://youtube.com/embed/${$route.params.id}`" width="900" height="400"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe class="rounded-lg" :src="`https://youtube.com/embed/${$route.params.id}?autoplay=1&mute=1`" width="900"
+        height="400" frameborder="0"
+        allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
